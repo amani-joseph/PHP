@@ -1,13 +1,30 @@
 <?php
 // Magic constants
+echo __DIR__.'<br>';
+echo __FILE__.'<br>';
+echo __LINE__.'<br>';
 
-// Create directory
+
+
+
+// Create directory and file
+
+// mkdir('amani-dir');
+// touch('amani-dir/amani.txt');
 
 // Rename directory
+// rename('./amani-dir/amani.txt', 'joe.html');
 
 // Delete directory
+// rmdir('amani-dir');
+
 
 // Read files and folders inside directory
+echo file_get_contents('./joe.txt').'<br>';
+file_put_contents('sample.txt', 'this is the sample text');
+echo file_get_contents('sample.txt').'<br>';
+
+
 
 // file_get_contents, file_put_contents
 
